@@ -34,7 +34,7 @@ app.post("/control", (req, res) => {
     toggle = "ON";
   }
 
-  res.status(200).send({ toggle });
+  res.status(200).send({ gas: gasValue, toggle: toggle });
 });
 
 app.listen(port, () => {
