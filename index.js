@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 app.post("/message", (req, res) => {
   const { gas } = req.body;
   gasValue = gas;
-  res.status(200).send({ gas: gasValue });
+  res.status(200).send({ gas: gasValue,toggle: toggle  });
 });
 
 app.get("/message", (req, res) => {
